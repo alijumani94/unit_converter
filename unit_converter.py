@@ -66,9 +66,6 @@ def convert_units(value, from_unit, to_unit, factors):
         from_factor = factors[from_unit]
         to_factor = factors[to_unit]
         return value * from_factor / to_factor
-    else:
-        st.error("Invalid unit selection.")
-        return None
 
 if st.button("Convert"):
     if conversion_category == "length":
