@@ -74,12 +74,12 @@ if st.button("Convert"):
     if conversion_category == "length":
         result = convert_units(value, from_unit, to_unit, length_factors)
         if result is not None:
-            st.write(f"Result is: {result}")
+            st.write(f"{value} {from_unit}s= {result}{to_unit}s")
     
     elif conversion_category == "weight":
         result = convert_units(value, from_unit, to_unit, weight_factors)
         if result is not None:
-            st.write(f"Result is: {result}")
+            st.write(f"{value} {from_unit}s= {result}{to_unit}s")
     
     elif conversion_category == "volume":
         result = convert_units(value, from_unit, to_unit, volume_factors)
